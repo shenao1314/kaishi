@@ -1,0 +1,22 @@
+import java.util.Scanner;
+class Ni{
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        char[] str = {'a', 'b', 'c', 'd', 'f', 'g'};
+        int length = str.length;//调用数组时应该是属性而不是方法。改为int length=str.length；
+        for (int i = 0; i < length; i++) {
+            switch (str[i]) {
+                case 'a':
+                case 'b':
+                case 'c':
+                case 'd':
+                case 'e':
+                    char uppercaseLetter = Character.toUpperCase(str[i]);//java字符串中的赋值不应该这样应该为 char uppercaseLetter=Character.toUpperCase(str[i].charAt[0])这样才对
+                    System.out.println("大写字符: " + uppercaseLetter);
+                    break;
+                default:
+                    System.out.println("other");
+            }
+        }
+    }
+}
