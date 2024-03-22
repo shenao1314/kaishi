@@ -1,0 +1,31 @@
+case后如果有多行语句那么会按顺续执行
+java的数组的赋值
+String[] str = new String[5]; //创建一个长度为5的String(字符串)型的一维数组
+String[] str = new String[]{"","","","",""};
+String[] str = {"","","","",""};
+java中如何把小写字符变成大写    
+char lowercaseLetter = 'a';
+        char uppercaseLetter = Character.toUpperCase(lowercaseLetter);
+    
+        System.out.println("原字符: " + lowercaseLetter);
+        System.out.println("大写字符: " + uppercaseLetter);
+Java中给字符串测长度和给数组测长度不一样
+字符串;   int  length=变量.length();
+数组 int  length=变量.length;
+在java中要计算平方或是立方的时候不能用*3而是 
+double num = 5; // 要计算立方的数
+ double cube = Math.pow(num, 3); // 计算立方值
+此处不可以为int因为Math.pow返回为double型
+但如果为int cube=num*num*num;可以为int行。但可以使用强制类型转换
+break为跳出当前循环不在执行该循环
+约数找最大的   最小公倍数找最小的
+while循环的初始条件的变量的作用域不仅局限于while而for循环仅限于for
+死循环后面不能有执行语句不然会报错
+外层循环控制行数内层循环控制列数
+等于运算符的优先级高于或运算符
+continue结束当次循环
+label：for这个标签        break  label可以直接跳出标签标记的for
+continue也可以
+a---b这种都是从左往右看为a--和-b
+字符串不可以赋给一个整形数组但可以赋给一个字符型数组char[] numArray = Integer.toString(sum).toCharArray();    //把一个整数变为字符串然后赋给字符型数组
+amary[i] = numArray[i] - '0'; // 将char转换为int
